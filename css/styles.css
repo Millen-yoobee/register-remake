@@ -44,8 +44,9 @@ main aside p {
 	padding: 10px;
 }
 main {
-	width: 45%;
+	width: 49%;
 /*	background-color: orange;*/
+	float: left;
 }
 hr {
 	border: none;
@@ -121,4 +122,22 @@ article img {
 	position: relative;  /* to match position relative above  */
 	top: -20px;
 }
+#extra {
+/*	background-color: pink;*/
+	width: 49%;
+	float: right
+}
+#social {
+	background-color: #e5005f;
+	color: white;
+	padding: 40px;
+	text-align: right;
+}
+#social a {
+	color: inherit;   /*  inherits the color of the parent social  */
+	text-decoration: none;
+}
+
+
+
 
