@@ -52,7 +52,62 @@ hr {
 	border-top: 1px solid #eeeeee;
 }
 article img {
-	max-width: 100%  /* can not be wider than the img container  */
+	max-width: 100%;  /* can not be wider than the img container  */
+}
+
+.related div {
+	/*background-color: blue;*/
+	width: 240px;
+	text-align: center;
+}
+.related:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+.related div:nth-of-type(1) {
+	float:left;
+	margin-left: 50px;
+}
+.related div:nth-of-type(2) {
+	float:right;
+	margin-right: 50px;
+}
+.related img {
+	border-radius: 50%;  /* a perfect square img will be turned into a circle */
+}
+.related div a {
+	background-color: #e5005f; /* pink */
+	display: block; /*maximises the length of the anchor  */
+	padding: 10px;  /*(top/bottom, l/r)*/
+	color: white;
+	text-transform: uppercase;
+	text-decoration: none;   /*removes the underline  */
+	margin-top: -20px;   /* to move the anchor up to intersect with the image */
+	/* above causes a layering issue, which has to be fixed via CSS  */
+	position: relative;  /*  changes/fixes the layer */
+	white-space: nowrap;  /* to unwrap long anchor text  */
+	overflow: hidden; /* to hide the overflow text  */
+	text-overflow: ellipsis; 
+}
+#scroll-left,
+#scroll-right {
+	font-size: 24px;
+	border: none;
+	background-color: transparent;  /* i.e. no color  */
+	cursor: pointer;  /*  cursor turns into mickey mouse hand  */
+	color: #e5005f;  
+	position: absolute;
+	top: 35%;
+}
+#scroll-left {
+	left: 0;
+}
+#scroll-right {
+	right: 0;
+}.related {
+	/*background-color: orange;*/
+	position: relative;   /*  to make scroll-left absolute above works */
 }
 
 
