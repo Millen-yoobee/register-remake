@@ -1,5 +1,6 @@
 body {
 	font-family: Arial;
+	padding-left: 300px;
 }
 nav ul {
 	list-style: none;  /*get rid of the bullet points */
@@ -23,6 +24,8 @@ nav li a:hover,
 nav {
 	padding: 10px 0 0 10px;
 	width: 240px;
+	position: fixed;
+	left: 10px;
 /*	background-color: pink*/
 }
 nav > a {
@@ -36,5 +39,21 @@ nav > a {
 nav > a:hover {
 	color: #e5005f;
 }
+main aside p {
+	background-color: #eeeeee;
+	padding: 10px;
+}
+main {
+	width: 45%;
+/*	background-color: orange;*/
+}
+hr {
+	border: none;
+	border-top: 1px solid #eeeeee;
+}
+article img {
+	max-width: 100%  /* can not be wider than the img container  */
+}
+
 
 
