@@ -109,6 +109,16 @@ article img {
 	/*background-color: orange;*/
 	position: relative;   /*  to make scroll-left absolute above works */
 }
-
-
+.related h1 {  /*     Topics */
+/*	background-color: blue;*/
+	width: 100px;
+	text-align: center;
+	margin: 0 auto;
+	position: relative;   /*  to match position relative below */  
+	z-index: 2;
+}
+.related hr {
+	position: relative;  /* to match position relative above  */
+	top: -20px;
+}
 
