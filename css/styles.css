@@ -123,9 +123,9 @@ article img {
 	top: -20px;
 }
 #extra {
-/*	background-color: pink;*/
+/*	background-color: pink;  */
 	width: 49%;
-	float: right
+	float: right;
 }
 #social {
 	background-color: #e5005f;
@@ -160,5 +160,71 @@ article img {
 #newsletter a:hover {
 	background-color: #333333;
 }
+#left {
+/*	height: 300px;*/
+/*	background-color: blue;*/
+	width: 50%;
+	float: left;
+	padding-left: 15px;
+	padding-right: 15px;
+	box-sizing: border-box;  /* to keep width at 50% even w padding-right 10px    */
+}
+#right {
+/*	height: 300px;
+	background-color: pink;*/
+	width: 50%;
+	float: right;
+	padding-left: 15px;
+	padding-right: 15px;
+	box-sizing: border-box;  /* to keep width at 50% even w padding-right 10px    */
+}
+#extra section > h1 {   /* only h1 direct descendant of a section  */
+	padding-bottom: 10px;
+	text-transform: uppercase;
+	font-size: 18px;
+	border-bottom: 1px solid #dddddd;
+}
+#comments img {
+	float: left; /* to allow text to float to the right of the image  */
+	margin-right: 10px;
+}
+#comments p a {
+	font-weight: bold;
+	text-decoration: none;   /*  to remove the underline from the anchor  */
+	color: #333333;
+}
+#comments p a:hover {
+	color: #111111;
+	text-decoration: underline;
+}
+#comments article > a {
+	color: #e5005f;
+	text-decoration: none;
+}
+#comments article > a:hover {
+	text-decoration: underline;
+}
+#extra section {
+	margin-bottom: 40px;  /*to push sections Latest comments & Top five stories apart */
+}
+ #top-5 img {
+ 	float: left;
+ 	margin-right: 10px;
+}
+#top-5 a {
+	font-size: 14px;
+	color: #333333;
+	text-decoration: none;
+}
+#top-5 article {
+/*	background-color: yellow;*/
+	border-bottom: 1px dashed #dddddd;
+	padding-bottom: 10px;
 
+}
+#top-5 article:after {  /* inserts at the bottom an imaginary content to push the article border below the image */
+	content: '';
+	display: block;
+	clear: both;
+}
 
