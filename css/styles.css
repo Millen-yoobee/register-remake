@@ -227,4 +227,64 @@ article img {
 	display: block;
 	clear: both;
 }
+#sponsors img {  /* apply padding to the content, which is the images  */
+	width: calc(33.333% - 10px);
+	float: left;
+	padding: 10px;
+	box-sizing: border-box; /*to fit 3 boxes in a row whilst keeping width 33.333*/
+	border: 1px solid #dddddd;
+	margin: 5px;
+}
+#property h1 span {
+	color: #777777;
+	display: block;  /*to force it on a new line  */
+	text-transform: none;  /* to reset back to normal  */
+	font-size: 16px;
+}
+#property img {
+	float: left;
+	margin-right: 10px;
+}
+#property a {
+	width: 53%;
+	float: right;
+	font-size: 14px;
+	color: #333333;
+	text-decoration: none;
+}
+#property article {
+	padding-bottom: 5px;
+}
+#property article span {
+	color: #777777;
+	font-size: 12px;
+}
+#property article:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+#property hr {
+	border: 1px solid #19194c;
+}
+#advertiser {
+	border: 1px solid #19194c;
+	width: 140px;	
+	display: block;
+	margin: 0 auto;
+}
+#advertiser h1 {
+	width: 90%;
+	text-align: center;
+	margin: 0 auto;
+	padding: 3px;
+	background-color: #19194c;
+	color:  white;
+}
+#listings {
+	border: 1px solid #19194c;
+	padding: 7px;
+	padding-bottom: 0px;
+}
+
 
