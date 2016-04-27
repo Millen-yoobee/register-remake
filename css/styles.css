@@ -271,7 +271,7 @@ article img {
 	border: 1px solid #19194c;
 	width: 140px;	
 	display: block;
-	margin: 0 auto;
+	margin: 0 auto !important;
 }
 #advertiser h1 {
 	width: 90%;
